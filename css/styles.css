@@ -1,35 +1,26 @@
 :root {
-    ---primary-background-color: white;
+    ---primary-background-color:  #ffff;
     ---secondary-background-color: #2e2f42;
     ---trd-background-color: #f4f4fd;
     ---title-color: #2e2f42;
     ---text-color: #434455;
-    ---primary-btn-color: #4d5ea5;
+    ---primary-btn-color: #4D5AE5;
     ---tap-link-color: #404bbf;
+    ---text-background-color:#E7E9FC;
 }
 
 body {
 
     font-family: 'Roboto', sans-serif;
-
 }
-
-ul {
-    list-style: none;
-}
-
-.page-header {
-    text-decoration: none;
-
-}
-
 .logo-first {
+    font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
     display: flex;
     letter-spacing: 0.03em;
-    color: #4D5AE5;
+    color: var(---primary-btn-color);
     text-decoration: none;
 }
 
@@ -37,145 +28,125 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
-
+    color: var(---title-color);
+    text-transform: uppercase;
     text-decoration: none;
 }
 
+
 .site-nav .link {
+    color: var(---title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.2;
     text-decoration: none;
-    color: var(--title-color);
 }
 
 
-
-
-
-.site-nav {
-    text-indent: 50;
-}
-
-.site-nav :hover,
-.site-nav :focus {
-    color: blue;
-}
-
-.site-nav :active {
-    color: var(--tap-link-color);
-    text-decoration: underline;
-}
-
-.site-nav .link.current {
-    color: var(--primary-btn-color);
+.site-nav :hover ,
+.site-nav  :focus {
+    color: var(---tap-link-color);
 }
 
 
 .site-address .link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.3;
-}
-
-.site-address .link {
-    color: #434455;
-    text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0, 02em;
+    letter-spacing: 0.2;
     text-decoration: none;
+    color: var(---text-color);
 }
 
-.site-address :hover {
-    color: blue;
+.site-address :hover,
+.site-address :focus {
+    color: var(---tap-link-color);
 }
 
 .hero {
-    background-color: #2E2F42;
+    background-color: var(---secondary-background-color);
 }
 
 .hero-tex {
-
-    font-style: normal;
-    font-weight: 700;
+   font-weight: 700;
     font-size: 56px;
     line-height: 1.071;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-
+    color: var(---primary-background-color);
+   
 }
-
-
-
+ /* Button */
 .button-service {
-    color: #FFFFFF;
+    color: var(---primary-background-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    line-height:1.5;
     border-radius: 4px;
-    display: flex;
     cursor: pointer;
-
 }
 
-.button-service :hover,
+.button-service {
+   border: var(---primary-btn-color); 
+   background-color : var(---primary-btn-color);
+   cursor: pointer;
+}
+
+.button-service :hover ,
 .button-service :focus {
-    background: var(--focus-color);
-
+    color: var(---trd-background-color);
 }
-
-
-
-
-
+  
+.button-service {
+    border: var(---primary-btn-color);
+}.button-service :active {
+    color: var(---tap-link-color);
+}
+    
 .filter-btn:hover,
 .filter-btn:focus {
-    background-color: #404BBF;
+    background-color:var(---tap-link-color);
+  
 }
-
-
+.filter-btn {
+   border: var(---primary-btn-color);
+   border-radius: 4px;
+} 
 .filter-btn :hover,
 .filter-btn :focus {
-    background: var(--focus-color);
-    cursor: pointer;
+    background: var(---tap-link-color);
 }
 
-.button-filter:hover,
-.button-filter :focus {
-    background-color: #F4F4FD;
-    cursor: pointer;
 
-}
 
 .filter-btn {
-    background: #404BBF;
+    background: var(---trd-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(---primary-background-color);
     cursor: pointer;
 }
-
-.button-filter {
-    display: flex;
-    background: #F4F4FD;
+   .button-filter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(---trd-background-color);
     border: 1px solid #E7E9FC;
+    color: var(---primary-btn-color);
     cursor: pointer;
-
+    border-radius: 4px;
 }
+ 
 
+    .button-filter:hover,
+   .button-filter :focus {
+    background: var(---tap-link-color);
+}
 .list {
     list-style: none;
 }
@@ -192,56 +163,57 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--title-color);
 }
 
 .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
     text-transform: capitalize;
-    color: var(--title-color);
+    color: var(---text-color);
 }
 
 
 /* <!-- Sectoin 3 --> */
 
 .caption {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    color: #2E2F42;
+    color: var(---secondary-background-color);
 }
 
+
+ 
 .works-section {
-    background: white;
+    background: var(---primary-background-color);
 }
+
 
 .subject {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
+    background-color: var(---trd-background-color);
+}
+.background-section {
+    background-color: var(---trd-background-color);
 }
 
-.card {
-    background: var(--primary-background-color);
-}
+
 
 .team-section {
-    background: var(--trd-background-color);
+    background-color:var(---primary-background-color);
 }
 
 .title {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--title-color);
+    color: var(---title-color);
+
 }
 
 
@@ -249,7 +221,7 @@ ul {
 /* footer */
 
 .footer {
-    background: #2E2F42
+    background: var(---title-color);
 }
 
 .logo {
@@ -262,7 +234,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: blue;
+    color:var(---primary-btn-color);
 }
 
 .footer-code {
@@ -270,11 +242,9 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color: var(---trd-background-color);
 }
 
 .comment {
@@ -283,7 +253,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(---trd-background-color)
 }
 
 
