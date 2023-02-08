@@ -24,6 +24,16 @@ body {
     text-decoration: none;
 }
 
+.link-studio{
+    color: var(---tap-link-color);
+    text-decoration: none;
+}
+
+.link-portfolio{
+    color: var(---tap-link-color);
+    text-decoration: none;
+}
+
 .logo-second {
     font-weight: 800;
     font-size: 18px;
@@ -57,7 +67,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2;
-    text-decoration: none;
+   text-decoration: none;
     color: var(---text-color);
 }
 
@@ -79,31 +89,53 @@ body {
    
 }
  /* Button */
-.button-service {
-    color: var(---primary-background-color);
+.button-btn {
+     background: var(---primary-btn-color);
     font-weight: 500;
     font-size: 16px;
     line-height:1.5;
     border-radius: 4px;
     cursor: pointer;
+    color: var(---primary-background-color);
+     border: var(---primary-btn-color);
 }
+    
+ .button-btn :focus  ,
+  .button-btn:active 
+ { 
+color: var(---tap-link-color);
+}
+
+
+
 
 .button-service {
-   border: var(---primary-btn-color); 
-   background-color : var(---primary-btn-color);
-   cursor: pointer;
+    background: var(---primary-btn-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.5;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(---primary-background-color);
+     border: var(---primary-btn-color); 
 }
 
-.button-service :hover ,
-.button-service :focus {
-    color: var(---trd-background-color);
+.button-service:hover
+{
+    background: var(---tap-link-color);
+   
+   
 }
+
+ .button-service :focus  ,
+  .button-service :active 
+ { 
+color: var(---tap-link-color);
+}
+
+
   
-.button-service {
-    border: var(---primary-btn-color);
-}.button-service :active {
-    color: var(---tap-link-color);
-}
+
     
 .filter-btn:hover,
 .filter-btn:focus {
@@ -141,11 +173,15 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
- 
+  .button-filter:active {
+    background: var(---tap-link-color);
+    color: var(---primary-background-color);
+  }
 
     .button-filter:hover,
    .button-filter :focus {
     background: var(---tap-link-color);
+    color: var(---primary-background-color);
 }
 .list {
     list-style: none;
@@ -195,27 +231,38 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
+    color:  var(---secondary-background-color);
     background-color: var(---trd-background-color);
 }
 .background-section {
-    background-color: var(---trd-background-color);
+    background: var(---trd-background-color);
 }
 
 
 
 .team-section {
-    background-color:var(---primary-background-color);
+    text-decoration: none;
+    
+    background-color: var(---primary-background-color);
+
 }
+
 
 .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(---title-color);
+    color: var(---text-color);
 
 }
 
+.title-working {
+    font-weight: 400;
+    font-size: 16px;
+   line-height: 1.5;  
+   color: var(---text-color);
+}
 
 
 /* footer */
@@ -258,10 +305,14 @@ body {
 
 
 
-
 .section-card {
     text-decoration: none;
 }
+
+.card {
+    text-decoration: none;
+}
+
 
 .items-subtitle {
     font-style: normal;
@@ -269,7 +320,8 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(---secondary-background-color);
+    text-decoration: none;
 }
 
 
@@ -280,5 +332,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(---text-color);
+    text-decoration: none;
 }
