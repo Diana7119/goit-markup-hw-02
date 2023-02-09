@@ -25,7 +25,12 @@ body {
 }
 
 .link-studio{
+    font-weight: 500;
+    font-family: inherit;
     color: var(---tap-link-color);
+
+
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -164,6 +169,7 @@ color: var(---tap-link-color);
     cursor: pointer;
 }
    .button-filter {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -241,6 +247,7 @@ color: var(---tap-link-color);
 
 
 .team-section {
+    display: block;
     text-decoration: none;
     
     background-color: var(---primary-background-color);
